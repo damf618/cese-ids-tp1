@@ -28,6 +28,12 @@ extern "C" {
 /*=====[Public function-like macros]=========================================*/
 
 /*=====[Definitions of public data types]====================================*/
+/// Estructura de Alumnos  
+///
+/// Elemento utilizado para el almacenamiento de informacion correspondiente a Alumnos
+/// @param apellidos elemento para almacenar los *apellidos* de los estudiantes
+/// @param nombres elemento para almacenar los *nombres* de los estudiantes
+/// @param documento elemento para almacenar el *documento* de los estudiantes
 
 typedef struct alumno_s {
     char apellidos[30];
