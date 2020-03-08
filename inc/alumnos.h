@@ -35,6 +35,7 @@ extern "C" {
 /// @param apellidos elemento para almacenar los *apellidos* del Alumno a crear
 /// @param nombres elemento para almacenar los *nombres* del Alumno a crear
 /// @param documento elemento para almacenar el *documento* del Alumno a crear
+/// @note Se debe tener en consideracion la longitud maxima de cada variable para evitar errores.
 
 typedef struct alumno_s {
     char apellidos[30];
