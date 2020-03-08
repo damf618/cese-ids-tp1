@@ -25,6 +25,13 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/// Estructura de Alumno **DANIEL MARQUEZ**.  
+///
+/// Elemento utilizado para el almacenamiento de informacion correspondiente a Daniel
+/// @param apellidos elemento para almacenar los *apellidos* de Daniel
+/// @param nombres elemento para almacenar los *nombres* de Daniel
+/// @param documento elemento para almacenar el *documento* de Daniel
+
 static const struct alumno_s DANIEL_MARQUEZ = {
         .apellidos = "MARQUEZ FARIAS",
         .nombres = "Daniel Alexander",
@@ -45,6 +52,14 @@ const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Implementations of interrupt functions]==============================*/
 
+
+/// Impresion de Estructura de Alumno Individualmente.  
+///
+/// Elemento utilizado para el almacenamiento de informacion correspondiente del Alumno
+/// @param cadena elemento para almacenar el texto estructurado del Alumno
+/// @param espacio elemento con el largo de la cadena de texto
+/// @param alumno elemento con toda la informacion del Alumno
+
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
     int resultado;
     const char FORMATO[] = "{"
@@ -58,6 +73,15 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
 
     return (resultado >= 0);
 }
+
+
+/// Impresion de Estructuras de Alumnos .  
+///
+/// Elemento utilizado para el almacenamiento de informacion correspondiente del Alumno
+/// @param cadena con el formato deseado para laimpresion
+/// @param alumnos[] array de Alumnos con todasuinformacion
+/// @param cantidad cantidadde alumnos a imprimir Alumno
+
 
 bool SerializarAlumnos(char * cadena, size_t espacio, const alumno_t alumnos[], int cantidad) {
     int posicion = snprintf(cadena, espacio, "[\r\n  ");
