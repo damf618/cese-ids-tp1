@@ -35,7 +35,7 @@
 /*=====[Implementations of private functions]================================*/
 
 int main(int argc, char *argv[]) {
-    char cadena[256];
+    char cadena[1024];
 
     if (SerializarAlumnos(cadena, sizeof(cadena), ALUMNOS, CANTIDAD_ALUMNOS)) {
         printf("Listado total de alumnos: %s\r\n", cadena);

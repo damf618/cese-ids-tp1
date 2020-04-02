@@ -24,6 +24,65 @@
 /*=====[Definitions of external public global variables]=====================*/
 
 /*=====[Definitions of public global variables]==============================*/
+static const struct alumno_s DAVID_BROIN = {
+    .apellidos = "BROIN",
+    .nombres = "David Mauricio",
+    .documento = "32.370.264",
+};
+
+static const struct alumno_s LUCAS_MONZONLANGUASCO = {
+    .apellidos = "MONZON LANGUASCO",
+    .nombres = "Lucas Fabricio",
+    .documento = "38.876.668",
+};
+
+static const struct alumno_s KEVIN_MONCAYO = {
+    .apellidos = "MONCAYO MUÑOZ",
+    .nombres = "Jorge Kevin",
+    .documento = "1.085.298.019",
+};
+
+static const struct alumno_s ESTEBAN_VOLENTINI = {
+    .apellidos = "VOLENTINI",
+    .nombres = "Esteban Daniel",
+    .documento = "23.517.968",
+};
+
+static const struct alumno_s HANES_SCIARRONE = {
+    .apellidos = "SCIARRONE",
+    .nombres = "Hanes Nahuel",
+    .documento = "37.867.564",
+};
+
+static const struct alumno_s JOSE_LOPEZ = {
+    .apellidos = "LOPEZ",
+    .nombres = "José Daniel",
+    .documento = "20.010.452",
+};
+
+static const struct alumno_s FREDS_AMUNDARAY = {
+    .apellidos = "AMUNDARAY CRUZ",
+    .nombres = "Freds Argilio",
+    .documento = "95.843.832",
+};
+
+static const struct alumno_s LUCIANO_VITTORI = {
+    .apellidos = "VITTORI",
+    .nombres = "Luciano Francisco",
+    .documento = "35.440.774",
+};
+
+static const struct alumno_s MUNOZ_JORGE = {
+      .apellidos = "MUÑOZ",
+      .nombres = "Jorge Salvador",
+      .documento = "33.027.191",
+  };
+
+static const struct alumno_s RAUL_CAMACHO = {
+        .apellidos = "CAMACHO",
+        .nombres = "Raul Alejandro",
+        .documento = "75.656.530",
+    };
 
 static const struct alumno_s DANIEL_MARQUEZ = {
         .apellidos = "MARQUEZ FARIAS",
@@ -33,7 +92,18 @@ static const struct alumno_s DANIEL_MARQUEZ = {
 
 const alumno_t ALUMNOS[] = {
     &DANIEL_MARQUEZ,
+    &RAUL_CAMACHO,
+    &DAVID_BROIN,
+    &MUNOZ_JORGE,
+    &LUCIANO_VITTORI,
+    &LUCAS_MONZONLANGUASCO,
+    &KEVIN_MONCAYO,
+    &ESTEBAN_VOLENTINI,
+    &HANES_SCIARRONE,
+    &JOSE_LOPEZ,
+    &FREDS_AMUNDARAY,  
 };
+
 
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
